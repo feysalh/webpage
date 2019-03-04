@@ -1,0 +1,115 @@
+[  
+  {  
+    "type": 1,
+    "title": "htpcmanager",
+    "description": "Htpcmanager, a front end for many htpc related applications. Hellowlol version.",
+    "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/htpcmanager-icon.png",
+    "image": "linuxserver/htpcmanager:latest",
+    "category": ["Video", "Music", "Other"],
+    "platform": "linux",
+    "ports": [  
+      "8085/tcp"
+    ],
+    "volumes": [{"container": "/config"}],
+    "env": [  
+      {  
+        "name":"PGID",
+        "label":"PGID",
+        "set":""
+      },
+      {  
+        "name":"PUID",
+        "label":"PUID",
+        "set":""
+      }
+    ]
+  },
+  {  
+    "type": 1,
+    "title": "openeyes",
+    "description": "Openeyes for Docker ",
+    "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/jacket-icon.png",
+    "image": "appertaopeneyes/web-allin1:latest",
+    "category": ["Downloaders", "Tools"],
+    "platform": "linux",
+    "ports": [  "80:80" , "3306:3306" ]
+    ,
+    "volumes": [
+      {"container": "/config"},
+      {"container": "/downloads"}
+    ],
+    "env": [  
+      {  
+        "name":"PUID",
+        "label":"PUID",
+        "set":""
+      },
+      {  
+        "name":"PGID",
+        "label":"PGID",
+        "set":""
+      }
+    ]
+  },
+  {  
+    "type": 1,
+    "title": "booksonic",
+    "description": "Booksonic is a server and an app for streaming your audiobooks to any pc or android phone. Most of the functionality is also availiable on other platforms that have apps for subsonic",
+    "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/booksonic.png",
+    "image": "linuxserver/booksonic:latest",
+    "category": ["Books", "Other"],
+    "platform": "linux",
+    "ports": [  
+      "4040/tcp"
+    ],
+    "volumes": [  
+      {"container": "/books"},
+      {"container": "/podcast"},
+      {"container": "/config"}
+    ],
+    "env": [  
+      {  
+        "name":"PUID",
+        "label":"PUID",
+        "set":""
+      },
+      {  
+        "name":"PGID",
+        "label":"PGID",
+        "set":""
+      },
+      {  
+        "name":"CONTEXT_PATH",
+        "label":"CONTEXT_PATH",
+        "set":"booksonic"
+      }
+    ]
+  },
+      {  
+        "name":"CHEVERETO_DB_HOST",
+        "label":"CHEVERETO_DB_HOST",
+        "set":""
+      },
+      {  
+        "name":"CHEVERETO_DB_USERNAME",
+        "label":"CHEVERETO_DB_USERNAME",
+        "set":""
+      },
+      {  
+        "name":"CHEVERETO_DB_PASSWORD",
+        "label":"CHEVERETO_DB_PASSWORD",
+        "set":""
+      },
+      {  
+        "name":"CHEVERETO_DB_NAME",
+        "label":"CHEVERETO_DB_NAME",
+        "set":""
+      },
+      {  
+        "name":"CHEVERETO_DB_PREFIX",
+        "label":"CHEVERETO_DB_PREFIX",
+        "set":""
+      }
+    ]
+  }
+]
