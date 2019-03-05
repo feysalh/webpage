@@ -14,12 +14,7 @@
             "preset":  true
           },
           {
-            "name": "ENV_VAR_WITH_SELECT_VALUE",
-            "label": "An environment variable",
-            "description": "A description for this env var",
-            "select": [
-              {
-            "text": "UID",
+            "name": "UID",
             "value": "1"
           },
           {
