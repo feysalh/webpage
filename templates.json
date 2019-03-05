@@ -14,7 +14,7 @@
         "env": [
           {
             "name": "MYSQL_ROOT_PASSWORD",
-            "label": "Root password",
+            "default": "Root password",
             "description": "Password used by the root user."
           },
           {
@@ -34,134 +34,134 @@
           },
           {
             "name": "GIT_USER",
-            "label": "feysalh",
+            "default": "feysalh",
             "description": "A description for this env var"
     },
               {
             "name": "PATH",
-            "label": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+            "default": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
             "description": "A description for this env var"
     },
               {
             "name": "PHP_VERSION",
-            "label": "5.6",
+            "default": "5.6",
             "description": "A description for this env var"
     },
               {
             "name": "WROOT",
-            "label": "/var/www/openeyes",
+            "default": "/var/www/openeyes",
             "description": "A description for this env var"
     },
                   {
             "name": "LOCAL_DB",
-            "label": "TRUE",
+            "default": "TRUE",
             "description": "A description for this env var"
     },
                   {
             "name": "BUILD_BRANCH",
-            "label": "master",
+            "default": "master",
             "description": "A description for this env var"
     },
                   {
             "name": "DOCKER_CONTAINER",
-            "label": "TRUE",
+            "default": "TRUE",
             "description": "A description for this env var"
     },
                   {
             "name": "DATABASE_HOST",
-            "label": "TRUE",
+            "default": "TRUE",
             "description": "A description for this env var"
     },
                       {
             "name": "DATABASE_HOST",
-            "label": "localhost",
+            "default": "localhost",
             "description": "A description for this env var"
     },
                       {
             "name": "DATABASE_NAME",
-            "label": "openeyes",
+            "default": "openeyes",
             "description": "A description for this env var"
     },
                       {
             "name": "DATABASE_PORT",
-            "label": "3306",
+            "default": "3306",
             "description": "A description for this env var"
     },
                       {
             "name": "DATABASE_USER",
-            "label": "openeyes",
+            "default": "openeyes",
             "description": "A description for this env var"
     },
                       {
             "name": "DATABASE_PASS",
-            "label": "openeyes",
+            "default": "openeyes",
             "description": "A description for this env var"
     },
                       {
             "name": "USE_DEMO_DATA",
-            "label": "TRUE",
+            "default": "TRUE",
             "description": "A description for this env var"
     },
                       {
             "name": "GIT_ORG",
-            "label": "",
+            "default": "",
             "description": "A description for this env var"
     },
                       {
             "name": "MYSQL_ROOT_PASSWORD",
-            "label": "",
+            "default": "",
             "description": "A description for this env var"
             
     },
                           {
             "name": "MYSQL_SUPER_USER",
-            "label": "root",
+            "default": "root",
             "description": "A description for this env var"        
     },
 
      {
             "name": "com.docker.compose.config-hash",
-            "label": "ea719b5eeead79c07fa20ad5ae3e98debd78975ce8ffafbbdb543bc5cd2acdb5",
+            "default": "ea719b5eeead79c07fa20ad5ae3e98debd78975ce8ffafbbdb543bc5cd2acdb5",
             "description": "A description for this env var"
             
     },
      {
             "name": "com.docker.compose.container-number",
-            "label": "1",
+            "default": "1",
             "description": "A description for this env var"
             
     },
      {
             "name": "com.docker.compose.oneoff",
-            "label": "False",
+            "default": "False",
             "description": "A description for this env var"
             
     },
      {
             "name": "com.docker.compose.project",
-            "label": "feysalh",
+            "default": "feysalh",
             "description": "A description for this env var"
             
     },
          {
             "name": "com.docker.compose.service",
-            "label": "openeyes",
+            "default": "openeyes",
             "description": "A description for this env var"
             
     },
          {
             "name": "com.docker.compose.version",
-            "label": "1.23.2",
+            "default": "1.23.2",
             "description": "A description for this env var"
             
     },
 
     {
-        "restart_policy": "no"
+             "restart_policy": "no"
     },
 
     {
-            "volumes": [
+              "volumes": [
               {
                 "container": "/var/lib/mysql"
               },
@@ -174,35 +174,7 @@
                 "readonly": true
               }
             ]
-          },
-    {
-      "type": 1,
-      "title": "Openeyes",
-      "description": "Openeyes for Docker",
-      "categories": ["webserver"],
-      "platform": "linux",
-      "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/nginx.png",
-      "image": "appertaopeneyes/web-allin1:latestt",
-      "ports": [
-        "80/tcp",
-        "3306/tcp"
-      ],
-      "volumes": [{"container": "/etc/nginx"}, {"container": "/usr/share/nginx/html"}]
-      
-    },
-    {
-      "type": 1,
-      "title": "Httpd",
-      "description": "Open-source HTTP server",
-      "categories": ["webserver"],
-      "platform": "linux",
-      "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/httpd.png",
-      "image": "httpd:latest",
-      "ports": [
-        "80/tcp"
-      ],
-      "volumes": [{"container": "/usr/local/apache2/htdocs/"}]
-    }
+          }
 ]
 }
 ]
