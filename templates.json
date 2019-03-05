@@ -1,14 +1,15 @@
 [
     {
       "type": 1,
-      "title": "Registry",
-      "description": "Docker image registry",
+      "title": "Openeyes",
+      "description": "Docker for Openeyes",
       "categories": ["docker"],
       "platform": "linux",
-      "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/registry.png",
-      "image": "registry:latest",
+      "logo": "",
+      "image": "appertaopeneyes/web-allin1:latest",
       "ports": [
-        "5000/tcp"
+        "80/tcp",
+        "3306/tcp"
       ],
         "env": [
           {
@@ -159,10 +160,21 @@
         "restart_policy": "no"
     },
 
-
     {
-      "volumes": [{ "container": "/var/lib/registry"}]
-    },
+            "volumes": [
+              {
+                "container": "/var/lib/mysql"
+              },
+              {
+                "container": "/var/www/openeyes"
+              },
+              {
+                "container": "/run/secrets/SSH_PRIVATE_KEY",
+                "bind": "/Users/feysalh/.ssh/id_rsa",
+                "readonly": true
+              }
+            ]
+          },
     {
       "type": 1,
       "title": "Openeyes",
