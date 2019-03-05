@@ -35,6 +35,10 @@
             "value": "feysalh"
            },
            {
+            "text": "GIT_EMAIL",
+            "value": "feysal.hassan@abehr.com"
+           },
+           {
             "text": "PATH",
             "value": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
             },
