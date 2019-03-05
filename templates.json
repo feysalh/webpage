@@ -24,18 +24,15 @@
             "select": [
               {
             "text": "UID",
-            "value": "1",
-            "default": true
+            "value": "1"
           },
           {
             "text": "GID",
-            "value": "1",
-            "preset": true
+            "value": "1"
           },
           {
             "text": "OE_MODE",
-            "value": "DEV",
-            "preset": true
+            "value": "DEV"
           },
           {
             "text": "GIT_USER",
@@ -51,7 +48,7 @@
             },
             {
             "text": "WROOT",
-            "value": "/var/www/openeyes",
+            "value": "/var/www/openeyes"
              },
              {
             "text": "LOCAL_DB",
@@ -59,52 +56,52 @@
             "description": "A description for this env var"
              },
              {
-            "name": "BUILD_BRANCH",
+            "text": "BUILD_BRANCH",
             "value": "master"
               },
               {
-            "name": "DOCKER_CONTAINER",
+            "text": "DOCKER_CONTAINER",
             "value": "TRUE"
              },
              {
-            "name": "DATABASE_HOST",
+            "text": "DATABASE_HOST",
             "value": "TRUE"
              },
              {
-            "name": "DATABASE_HOST",
+            "text": "DATABASE_HOST",
             "value": "localhost"
              },
              {
-            "name": "DATABASE_NAME",
+            "text": "DATABASE_NAME",
             "value": "openeyes"
              },
              {
-            "name": "DATABASE_PORT",
+            "text": "DATABASE_PORT",
             "value": "3306"
               },
               {
-            "name": "DATABASE_USER",
+            "text": "DATABASE_USER",
             "value": "openeyes"
               },
               {
-            "name": "DATABASE_PASS",
+            "text": "DATABASE_PASS",
             "value": "openeyes"
              },
              {
-            "name": "USE_DEMO_DATA",
+            "text": "USE_DEMO_DATA",
             "value": "TRUE"
               },
               {
-            "name": "GIT_ORG",
+            "text": "GIT_ORG",
             "value": ""
               },
               {
-            "name": "MYSQL_ROOT_PASSWORD",
+            "text": "MYSQL_ROOT_PASSWORD",
             "value": ""
             },
             {
-            "name": "MYSQL_SUPER_USER",
-            "default": "root",      
+            "text": "MYSQL_SUPER_USER",
+            "value": "root"
              },
              {
              "labels": [
