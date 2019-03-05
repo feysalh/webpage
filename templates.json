@@ -49,12 +49,10 @@
                   "bind": "/Users/feysalh/.ssh/id_rsa"
                 },
                 {
-                    "container": "/var/lib/mysql",
-                    "volume": "feysalh_oe-db"
+                "container": "/var/lib/mysql"
                   },
                   {
-                    "container": "/var/www/openeyes",
-                    "volume": "feysalh_oe-web"
+                "container": "/var/www/openeyes"
                   }
               ]
             }
