@@ -102,8 +102,8 @@
             {
             "text": "MYSQL_SUPER_USER",
             "value": "root"
-             },
-             {
+             }
+            ],
              "labels": [
                 { "name": "com.docker.compose.config-hash", "value": "ea719b5eeead79c07fa20ad5ae3e98debd78975ce8ffafbbdb543bc5cd2acdb5" },
                 { "name": "com.docker.compose.container-number", "value": "1" },
@@ -111,24 +111,14 @@
                 { "name": "com.docker.compose.oneoff", "value": "feysalh" },
                 { "name": "com.docker.compose.oneoff", "value": "openeyes" },
                 { "name": "com.docker.compose.oneoff", "value": "openeyes" }
+              ],
+              "volumes": [
+                {
+                  "container": "/var/run/docker.sock",
+                  "bind": "/var/run/docker.sock"
+                }
               ]
             }
-        ],
-              "volumes": [
-              {
-                "container": "/var/lib/mysql"
-              },
-              {
-                "container": "/var/www/openeyes"
-              },
-              {
-                "container": "/run/secrets/SSH_PRIVATE_KEY",
-                "bind": "/Users/feysalh/.ssh/id_rsa",
-                "readonly": true
-              
-            }
         ]
-      }
-]
     }
 ]
