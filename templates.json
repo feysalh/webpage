@@ -7,10 +7,6 @@
       "platform": "linux",
       "logo": "",
       "image": "appertaopeneyes/web-allin1:latest",
-      "ports": [
-        "80/tcp",
-        "3306/tcp"
-      ],
         "env": [
           {
             "name": "ENV_VAR_WITH_DEFAULT_VALUE",
@@ -111,6 +107,10 @@
                 { "name": "com.docker.compose.oneoff", "value": "feysalh" },
                 { "name": "com.docker.compose.oneoff", "value": "openeyes" },
                 { "name": "com.docker.compose.oneoff", "value": "openeyes" }
+              ],
+              "ports": [
+                "80/tcp",
+                "3306/tcp"
               ],
               "volumes": [
                 {
