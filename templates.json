@@ -113,30 +113,10 @@
                 { "name": "com.docker.compose.oneoff", "value": "False" },
                 { "name": "com.docker.compose.oneoff", "value": "feysalh" },
                 { "name": "com.docker.compose.oneoff", "value": "openeyes" },
-                { "name": "com.docker.compose.oneoff", "value": "1.23.2" }
+                { "name": "com.docker.compose.oneoff", "value": "openeyes" }
               ]
-            },
-            {
-            "name": "com.docker.compose.oneoff",
-            "default": "False",
-            "description": "A description for this env var"
-             },
-             {  
-            "name": "com.docker.compose.project",
-            "default": "feysalh",
-            "description": "A description for this env var"
-             },
-             {
-            "name": "com.docker.compose.service",
-            "default": "openeyes",
-            "description": "A description for this env var"
-            },
-            {
-            "name": "com.docker.compose.version",
-            "default": "1.23.2",
-            "description": "A description for this env var"
-            },
-            {
+            }
+        ],
               "volumes": [
               {
                 "container": "/var/lib/mysql"
@@ -148,9 +128,10 @@
                 "container": "/run/secrets/SSH_PRIVATE_KEY",
                 "bind": "/Users/feysalh/.ssh/id_rsa",
                 "readonly": true
-              }
-            ]
-          }
+              
+            }
+        ]
+      }
 ]
-}
+    }
 ]
