@@ -8,28 +8,28 @@
       "logo": "",
       "image": "appertaopeneyes/web-allin1:latest",
         "env": [
-                { "name": "TZ", "value": "Europe/London" },
-                { "name": "UID", "value": "1" },
-                { "name": "GID", "value": "1" },
-                { "name": "OE_MODE", "value": "DEV" },
+                { "name": "TZ", "set": "Europe/London" },
+                { "name": "UID", "set": "1" },
+                { "name": "GID", "set": "1" },
+                { "name": "OE_MODE", "set": "DEV" },
                 { "name": "GIT_USER", "set": "feysalh" },
                 { "name": "GIT_EMAIL", "set": "feysal.hassan@abehr.com" },
-                { "name": "PATH", "value": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin" },
-                { "name": "PHP_VERSION", "value": "5.6" },
-                { "name": "WROOT", "value": "/var/www/openeyes" },
-                { "name": "LOCAL_DB", "value": "TRUE" },
-                { "name": "BUILD_BRANCH", "value": "master" },
-                { "name": "SSH_PRIVATE_KEY", "value": "" },
-                { "name": "DOCKER_CONTAINER", "value": "TRUE" },
-                { "name": "DATABASE_HOST", "value": "localhost" },
-                { "name": "DATABASE_NAME", "value": "openeyes" },
-                { "name": "DATABASE_PORT", "value": "3306" },
-                { "name": "DATABASE_USER", "value": "openeyes" },
-                { "name": "DATABASE_PASS", "value": "openeyes" },
-                { "name": "USE_DEMO_DATA", "value": "TRUE" },
-                { "name": "GIT_ORG", "value": "" },
-                { "name": "MYSQL_ROOT_PASSWORD", "value": "" },
-                { "name": "DATABASE_PASS", "value": "MYSQL_SUPER_USER" }
+                { "name": "PATH", "set": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin" },
+                { "name": "PHP_VERSION", "set": "5.6" },
+                { "name": "WROOT", "set": "/var/www/openeyes" },
+                { "name": "LOCAL_DB", "set": "TRUE" },
+                { "name": "BUILD_BRANCH", "set": "master" },
+                { "name": "SSH_PRIVATE_KEY", "set": "" },
+                { "name": "DOCKER_CONTAINER", "set": "TRUE" },
+                { "name": "DATABASE_HOST", "set": "localhost" },
+                { "name": "DATABASE_NAME", "set": "openeyes" },
+                { "name": "DATABASE_PORT", "set": "3306" },
+                { "name": "DATABASE_USER", "set": "openeyes" },
+                { "name": "DATABASE_PASS", "set": "openeyes" },
+                { "name": "USE_DEMO_DATA", "set": "TRUE" },
+                { "name": "GIT_ORG", "set": "" },
+                { "name": "MYSQL_ROOT_PASSWORD", "set": "" },
+                { "name": "DATABASE_PASS", "set": "MYSQL_SUPER_USER" }
               ],
              "labels": [
                 { "name": "com.docker.compose.config-hash", "value": "ea719b5eeead79c07fa20ad5ae3e98debd78975ce8ffafbbdb543bc5cd2acdb5" },
@@ -50,13 +50,11 @@
                 },
                 {
                     "container": "/var/lib/mysql",
-                    "volume": "feysalh1_oe-db - local",
-                    "writable": true
+                    "volume": "feysalh_oe-db"
                   },
                   {
                     "container": "/var/www/openeyes",
-                    "volume": "feysalh1_oe-web - local",
-                    "writable": true
+                    "volume": "feysalh_oe-web"
                   }
               ]
             }
