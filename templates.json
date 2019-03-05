@@ -50,11 +50,13 @@
                 },
                 {
                     "container": "/var/lib/mysql",
-                    "volume": "feysalh_oe-db - local"
+                    "volume": "feysalh1_oe-db - local"
+                    "writeable": true
                   },
                   {
                     "container": "/var/www/openeyes",
-                    "volume": "feysalh_oe-web - local"
+                    "volume": "feysalh1_oe-web - local"
+                    "writeable": true
                   }
               ]
             }
