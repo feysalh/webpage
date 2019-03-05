@@ -9,94 +9,88 @@
       "image": "appertaopeneyes/web-allin1:latest",
         "env": [
           {
-            "name": "ENV_VAR_WITH_DEFAULT_VALUE",
-            "default": "default_value",
-            "preset":  true
-          },
-          {
             "name": "UID",
-            "value": "1"
+            "set": "1"
           },
           {
-            "text": "GID",
-            "value": "1"
+            "name": "GID",
+            "set": "1"
           },
           {
-            "text": "OE_MODE",
-            "value": "DEV"
+            "name": "OE_MODE",
+            "set": "DEV"
           },
           {
-            "text": "GIT_USER",
-            "value": "feysalh"
+            "name": "GIT_USER",
+            "set": "feysalh"
            },
            {
-            "text": "GIT_EMAIL",
-            "value": "feysal.hassan@abehr.com"
+            "name": "GIT_EMAIL",
+            "set": "feysal.hassan@abehr.com"
            },
            {
-            "text": "PATH",
-            "value": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+            "name": "PATH",
+            "set": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
             },
             {
-            "text": "PHP_VERSION",
-            "value": "5.6"
+            "name": "PHP_VERSION",
+            "set": "5.6"
             },
             {
-            "text": "WROOT",
-            "value": "/var/www/openeyes"
+            "nanme": "WROOT",
+            "set": "/var/www/openeyes"
              },
              {
-            "text": "LOCAL_DB",
-            "value": "TRUE",
-            "description": "A description for this env var"
+            "name": "LOCAL_DB",
+            "set": "TRUE"
              },
              {
-            "text": "BUILD_BRANCH",
-            "value": "master"
+            "name": "BUILD_BRANCH",
+            "set": "master"
               },
               {
-            "text": "DOCKER_CONTAINER",
-            "value": "TRUE"
+            "name": "DOCKER_CONTAINER",
+            "set": "TRUE"
              },
              {
-            "text": "DATABASE_HOST",
-            "value": "TRUE"
+            "name": "DATABASE_HOST",
+            "set": "TRUE"
              },
              {
-            "text": "DATABASE_HOST",
-            "value": "localhost"
+            "name": "DATABASE_HOST",
+            "set": "localhost"
              },
              {
-            "text": "DATABASE_NAME",
-            "value": "openeyes"
+            "name": "DATABASE_NAME",
+            "set": "openeyes"
              },
              {
-            "text": "DATABASE_PORT",
-            "value": "3306"
+            "name": "DATABASE_PORT",
+            "set": "3306"
               },
               {
-            "text": "DATABASE_USER",
-            "value": "openeyes"
+            "name": "DATABASE_USER",
+            "set": "openeyes"
               },
               {
-            "text": "DATABASE_PASS",
-            "value": "openeyes"
+            "name": "DATABASE_PASS",
+            "set": "openeyes"
              },
              {
-            "text": "USE_DEMO_DATA",
-            "value": "TRUE"
+            "name": "USE_DEMO_DATA",
+            "set": "TRUE"
               },
               {
-            "text": "GIT_ORG",
-            "value": ""
+            "name": "GIT_ORG",
+            "set": ""
               },
               {
-            "text": "MYSQL_ROOT_PASSWORD",
-            "value": ""
+            "name": "MYSQL_ROOT_PASSWORD",
+            "set": ""
             },
             {
-            "text": "MYSQL_SUPER_USER",
-            "value": "root"
+            "name": "MYSQL_SUPER_USER",
+            "set": "root"
              }
             ],
              "labels": [
@@ -118,6 +112,4 @@
                 }
               ]
             }
-        ]
-    }
 ]
