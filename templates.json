@@ -13,154 +13,130 @@
       ],
         "env": [
           {
-            "name": "MYSQL_ROOT_PASSWORD",
-            "default": "Root password",
-            "description": "Password used by the root user."
+            "name": "ENV_VAR_WITH_DEFAULT_VALUE",
+            "default": "default_value",
+            "preset":  true
           },
           {
-            "name": "UID",
-            "default": "1",
+            "name": "ENV_VAR_WITH_SELECT_VALUE",
+            "label": "An environment variable",
+            "description": "A description for this env var",
+            "select": [
+              {
+            "text": "UID",
+            "value": "1",
+            "default": true
+          },
+          {
+            "text": "GID",
+            "value": "1",
             "preset": true
           },
           {
-            "name": "GID",
-            "default": "1",
+            "text": "OE_MODE",
+            "value": "DEV",
             "preset": true
           },
           {
-            "name": "OE_MODE",
-            "default": "DEV",
-            "preset": true
-          },
-          {
-            "name": "GIT_USER",
-            "default": "feysalh",
+            "text": "GIT_USER",
+            "value": "feysalh"
+           },
+           {
+            "text": "PATH",
+            "value": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+            },
+            {
+            "text": "PHP_VERSION",
+            "value": "5.6"
+            },
+            {
+            "text": "WROOT",
+            "value": "/var/www/openeyes",
+             },
+             {
+            "text": "LOCAL_DB",
+            "value": "TRUE",
             "description": "A description for this env var"
-    },
-              {
-            "name": "PATH",
-            "default": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
-            "description": "A description for this env var"
-    },
-              {
-            "name": "PHP_VERSION",
-            "default": "5.6",
-            "description": "A description for this env var"
-    },
-              {
-            "name": "WROOT",
-            "default": "/var/www/openeyes",
-            "description": "A description for this env var"
-    },
-                  {
-            "name": "LOCAL_DB",
-            "default": "TRUE",
-            "description": "A description for this env var"
-    },
-                  {
+             },
+             {
             "name": "BUILD_BRANCH",
-            "default": "master",
-            "description": "A description for this env var"
-    },
-                  {
+            "value": "master"
+              },
+              {
             "name": "DOCKER_CONTAINER",
-            "default": "TRUE",
-            "description": "A description for this env var"
-    },
-                  {
+            "value": "TRUE"
+             },
+             {
             "name": "DATABASE_HOST",
-            "default": "TRUE",
-            "description": "A description for this env var"
-    },
-                      {
+            "value": "TRUE"
+             },
+             {
             "name": "DATABASE_HOST",
-            "default": "localhost",
-            "description": "A description for this env var"
-    },
-                      {
+            "value": "localhost"
+             },
+             {
             "name": "DATABASE_NAME",
-            "default": "openeyes",
-            "description": "A description for this env var"
-    },
-                      {
+            "value": "openeyes"
+             },
+             {
             "name": "DATABASE_PORT",
-            "default": "3306",
-            "description": "A description for this env var"
-    },
-                      {
+            "value": "3306"
+              },
+              {
             "name": "DATABASE_USER",
-            "default": "openeyes",
-            "description": "A description for this env var"
-    },
-                      {
+            "value": "openeyes"
+              },
+              {
             "name": "DATABASE_PASS",
-            "default": "openeyes",
-            "description": "A description for this env var"
-    },
-                      {
+            "value": "openeyes"
+             },
+             {
             "name": "USE_DEMO_DATA",
-            "default": "TRUE",
-            "description": "A description for this env var"
-    },
-                      {
+            "value": "TRUE"
+              },
+              {
             "name": "GIT_ORG",
-            "default": "",
-            "description": "A description for this env var"
-    },
-                      {
+            "value": ""
+              },
+              {
             "name": "MYSQL_ROOT_PASSWORD",
-            "default": "",
-            "description": "A description for this env var"
-            
-    },
-                          {
+            "value": ""
+            },
+            {
             "name": "MYSQL_SUPER_USER",
-            "default": "root",
-            "description": "A description for this env var"        
-    },
-
-     {
-            "name": "com.docker.compose.config-hash",
-            "default": "ea719b5eeead79c07fa20ad5ae3e98debd78975ce8ffafbbdb543bc5cd2acdb5",
-            "description": "A description for this env var"
-            
-    },
-     {
-            "name": "com.docker.compose.container-number",
-            "default": "1",
-            "description": "A description for this env var"
-            
-    },
-     {
+            "default": "root",      
+             },
+             {
+             "labels": [
+                { "name": "com.docker.compose.config-hash", "value": "ea719b5eeead79c07fa20ad5ae3e98debd78975ce8ffafbbdb543bc5cd2acdb5" },
+                { "name": "com.docker.compose.container-number", "value": "1" },
+                { "name": "com.docker.compose.oneoff", "value": "False" },
+                { "name": "com.docker.compose.oneoff", "value": "feysalh" },
+                { "name": "com.docker.compose.oneoff", "value": "openeyes" },
+                { "name": "com.docker.compose.oneoff", "value": "1.23.2" }
+              ]
+            },
+            {
             "name": "com.docker.compose.oneoff",
             "default": "False",
             "description": "A description for this env var"
-            
-    },
-     {
+             },
+             {  
             "name": "com.docker.compose.project",
             "default": "feysalh",
             "description": "A description for this env var"
-            
-    },
-         {
+             },
+             {
             "name": "com.docker.compose.service",
             "default": "openeyes",
             "description": "A description for this env var"
-            
-    },
-         {
+            },
+            {
             "name": "com.docker.compose.version",
             "default": "1.23.2",
             "description": "A description for this env var"
-            
-    },
-
-    {
-             "restart_policy": "no"
-    },
-
-    {
+            },
+            {
               "volumes": [
               {
                 "container": "/var/lib/mysql"
