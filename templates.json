@@ -30,8 +30,7 @@
                 {"label":"Database Password", "name": "DATABASE_PASS", "default": "openeyes" },
                 {"label":"Demo Data", "name": "USE_DEMO_DATA", "default": "TRUE" },
                 {"label":"GIT Org", "name": "GIT_ORG", "default": "" },
-                { "label":"MYSQL password", "name": "MYSQL_ROOT_PASSWORD", "set": "" },
-                { "label":"", "name": "DATABASE_PASS", "default": "MYSQL_SUPER_USER" }
+                {"label":"MYSQL password", "name": "MYSQL_ROOT_PASSWORD", "default": "" }
               ],
              "labels": [
                 { "name": "com.docker.compose.config-hash", "value": "ea719b5eeead79c07fa20ad5ae3e98debd78975ce8ffafbbdb543bc5cd2acdb5" },
