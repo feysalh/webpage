@@ -47,8 +47,7 @@
                 { "name": "traefik.frontend.headers.SSLRedirect", "value": "true" },
                 { "name": "traefik.frontend.headers.STSSeconds", "value": "315360000" },
                 { "name": "traefik.frontend.headers.forceSTSHeader", "value": "true" },
-                { "name": "traefik.frontend.headers.SSLHost", "value": "trialopeneyes.ddns.net" },
-                { "name": "traefik.docker.network", "value": "openeyes" }
+                { "name": "traefik.frontend.headers.SSLHost", "value": "trialopeneyes.ddns.net" }
               ],
               "ports": [
                 "80/tcp",
