@@ -20,6 +20,7 @@
                 {"label":"PHP version", "name": "PHP_VERSION", "default": "5.6" },
                 {"label":"Web Root", "name": "WROOT", "default": "/var/www/openeyes" },
                 {"label":"Local Database", "name": "LOCAL_DB", "default": "TRUE" },
+                {"label":"Track Commits", "name": "LTRACK_NEW_GIT_COMMITS", "default": "TRUE" },
                 {"label":"Build Branch", "name": "BUILD_BRANCH", "default": "master" },
                 {"label":"SSH Key", "name": "SSH_PRIVATE_KEY", "default": "" },
                 { "label":"", "name": "DOCKER_CONTAINER", "default": "TRUE" },
