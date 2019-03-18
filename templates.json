@@ -8,7 +8,7 @@
       "platform": "linux",
       "logo": "https://s3-eu-west-1.amazonaws.com/elasticbeanstalk-eu-west-1-327595770551/OpenEyes_logo.png",
       "image": "appertaopeneyes/web-allin1:latest",
-      "network": "bridge",
+      "network": "traefik_proxy",
         "env": [
                 {"lable":"Time Zone", "name": "TZ", "default": "Europe/London" },
                 {"label":"User Identifier", "name": "UID", "default": "1" },
@@ -42,6 +42,7 @@
                 { "name": "traefik.enable", "value": "true" },
                 { "name": "traefik.backend", "value": "openeyes" },
                 { "name": "traefik.frontend.rule", "value": "Host:trialopeneyes.ddns.net; PathPrefixStrip: /customer1" },
+                { "name": "traefik.frontend.priority", "value": "10" },
                 { "name": "traefik.port", "value": "80" },
                 { "name": "traefik.docker.network", "value": "traefik_proxy" },
                 { "name": "traefik.frontend.headers.SSLRedirect", "value": "true" },
