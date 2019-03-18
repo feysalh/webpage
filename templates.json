@@ -41,7 +41,7 @@
               { "name": "com.docker.compose.oneoff", "value": "openeyes" },
               { "name": "traefik.enable", "value": "true" },
               { "name": "traefik.backend", "value": "openeyes" },
-              { "name": "traefik.frontend.rule", "value": "Host:trialopeneyes.ddns.net;AddPrefix:/app;ReplacePath:/site/login" },
+              { "name": "traefik.frontend.rule", "value": "Host:trialopeneyes.ddns.net;AddPrefix:/app/;ReplacePath:/site/login/" },
               { "name": "traefik.frontend.priority", "value": "10" },
               { "name": "traefik.port", "value": "80" },
               { "name": "traefik.docker.network", "value": "traefik_proxy" },
