@@ -51,7 +51,7 @@
                 { "name": "traefik.frontend.headers.SSLHost", "value": "ec2-35-178-174-203.eu-west-2.compute.amazonaws.com" },
                 { "name": "traefik.frontend.headers.STSIncludeSubdomains", "value": "true" },
                 { "name": "traefik.frontend.headers.STSPreload", "value": "true" },
-                { "name": "traefik.frontend.headers.frameDeny", "value": "true" }
+                { "name": "traefik.frontend.headers.frameDeny", "value": "true" },
                 { "name": "traefik.frontend.redirect.regex", "value": "^(.*)/" },
                 { "name": "traefik.frontend.redirect.replacement", "value": "$$1/portainer/" },
                 { "traefik.frontend.rule", "value": "PathPrefix:/;ReplacePathRegex: ^/app1/(.*) /$$1" }
