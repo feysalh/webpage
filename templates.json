@@ -41,7 +41,7 @@
               { "name": "com.docker.compose.oneoff", "value": "openeyes" },
               { "name": "traefik.enable", "value": "true" },
               { "name": "traefik.backend", "value": "openeyes" },
-              { "name": "traefik.frontend.rule", "value": "Host:trialopeneyes.ddns.net; PathPrefixStrip: /" },
+              { "name": "traefik.frontend.rule", "value": "Host:trialopeneyes.ddns.net;Path:/;ReplacePath:/app" },
               { "name": "traefik.frontend.priority", "value": "10" },
               { "name": "traefik.port", "value": "80" },
               { "name": "traefik.docker.network", "value": "traefik_proxy" },
@@ -51,11 +51,7 @@
               { "name": "traefik.frontend.headers.SSLHost", "value": "ec2-35-178-174-203.eu-west-2.compute.amazonaws.com" },
               { "name": "traefik.frontend.headers.STSIncludeSubdomains", "value": "true" },
               { "name": "traefik.frontend.headers.STSPreload", "value": "true" },
-              { "name": "traefik.frontend.headers.frameDeny", "value": "true" },
-              { "name": "traefik.frontend.redirect.regex", "value": "^(.*)/" },
-              { "name": "traefik.frontend.redirect.replacement", "value": "$$1/" },
-              { "name": "traefik.frontend.rule", "value": "PathPrefix:/;ReplacePathRegex: ^/app1/(.*) /$$1" }
-              
+              { "name": "traefik.frontend.headers.frameDeny", "value": "true" }
             ],
             "ports": [
               "80/tcp",
