@@ -52,6 +52,10 @@
                 { "name": "traefik.frontend.headers.STSIncludeSubdomains", "value": "true" },
                 { "name": "traefik.frontend.headers.STSPreload", "value": "true" },
                 { "name": "traefik.frontend.headers.frameDeny", "value": "true" }
+                { "name": "traefik.frontend.redirect.regex", "value": "^(.*)/" },
+                { "name": "traefik.frontend.redirect.replacement", "value": "$$1/portainer/" },
+                { "traefik.frontend.rule", "value": "PathPrefix:/;ReplacePathRegex: ^/app1/(.*) /$$1" }
+                
               ],
               "ports": [
                 "80/tcp",
