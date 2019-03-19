@@ -57,7 +57,7 @@
               "container": "/var/lib/mysql"
                 },
                 {
-              "container": "/var/www/openeyes"
+              "container": "/var/www/openeyes1"
                 }
             ]
           }
