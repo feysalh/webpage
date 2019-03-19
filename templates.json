@@ -8,7 +8,7 @@
     "logo": "https://s3-eu-west-1.amazonaws.com/elasticbeanstalk-eu-west-1-327595770551/OpenEyes_logo.png",
     "image": "appertaopeneyes/web-allin1:latest",
     "network": "traefik_proxy",
-    "hostname": ""
+    "hostname": "",
       "env": [
               {"lable":"Time Zone", "name": "TZ", "default": "Europe/London" },
               {"label":"User Identifier", "name": "UID", "default": "1" },
