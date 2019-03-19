@@ -16,7 +16,7 @@
               {"label":"Track Commits", "name": "LTRACK_NEW_GIT_COMMITS", "default": "FALSE" },
               {"label":"Github Branch", "name": "BUILD_BRANCH", "default": "master", "description":"If you want to deploy a specific git branch (e.g, develop, feature/OE-XXXX, etc)" },
               {"label":"Demo Data", "name": "USE_DEMO_DATA", "default": "TRUE" },
-              {"label":"Time Zone", "name": "TZ", "default": "Europe/London" },
+              {"label":"Time Zone", "name": "TZ", "default": "Europe/London" }
             ],
            "labels": [
               { "name": "com.docker.compose.config-hash", "value": "ea719b5eeead79c07fa20ad5ae3e98debd78975ce8ffafbbdb543bc5cd2acdb5" },
