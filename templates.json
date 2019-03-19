@@ -2,13 +2,13 @@
   {
     "type": 1,
     "title": "Openeyes",
-    "name": "openeyes",
     "description": "OpenEyes™ is an Electronic Medical Record (EMR) application for ophthalmology, which enables clinicians to access all of the information they need about their patients in one place. We, the OpenEyes Foundation are, and always will be, clinically led, to ensure that the application only ever reflects what is most useful to our fellow clinicians. We are a registered charity, and provide the software on an open source basis, free of charge.",
     "categories": ["docker"],
     "platform": "linux",
     "logo": "https://s3-eu-west-1.amazonaws.com/elasticbeanstalk-eu-west-1-327595770551/OpenEyes_logo.png",
     "image": "appertaopeneyes/web-allin1:latest",
     "network": "traefik_proxy",
+    "hostname": ""
       "env": [
               {"lable":"Time Zone", "name": "TZ", "default": "Europe/London" },
               {"label":"User Identifier", "name": "UID", "default": "1" },
