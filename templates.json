@@ -40,7 +40,7 @@
               { "name": "traefik.frontend.entryPoints", "value": "http,https" },
               { "name": "traefik.frontend.redirect.entryPoint", "value": "https" },
               { "name": "traefik.frontend.redirect.regex", "value": "^https?://trialopeneyes.ddns.net/customer1/(.*)" },
-              { "name": "traefik.frontend.redirect.replacement", "value": "https://trialopeneyes.ddns.net/$1" }
+              { "name": "traefik.frontend.redirect.replacement", "value": "https://trialopeneyes.ddns.net/$$1" }
             ],
             "ports": [
               "80/tcp",
