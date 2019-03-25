@@ -34,13 +34,11 @@
               { "name": "traefik.frontend.headers.STSSeconds", "value": "315360000" },
               { "name": "traefik.frontend.headers.forceSTSHeader", "value": "true" },
               { "name": "traefik.frontend.headers.SSLHost", "value": "ec2-35-178-174-203.eu-west-2.compute.amazonaws.com" },
-              { "name": "traefik.frontend.headers.STSIncludeSubdomains", "value": "true" },
+              { "name": "traefik.passHostHeader", "value": "true" },
               { "name": "traefik.frontend.headers.STSPreload", "value": "true" },
               { "name": "traefik.frontend.headers.frameDeny", "value": "true" },
               { "name": "traefik.frontend.entryPoints", "value": "http,https" },
-              { "name": "traefik.frontend.redirect.entryPoint", "value": "https" },
-              { "name": "traefik.frontend.redirect.regex", "value": "^https?://trialopeneyes.ddns.net/customer1/(.*)" },
-              { "name": "traefik.frontend.redirect.replacement", "value": "https://trialopeneyes.ddns.net/$$1" }
+              { "name": "traefik.frontend.redirect.entryPoint", "value": "https" }
             ],
             "ports": [
               "80/tcp",
