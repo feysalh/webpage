@@ -38,7 +38,6 @@
               { "name": "traefik.frontend.headers.STSPreload", "value": "true" },
               { "name": "traefik.frontend.headers.frameDeny", "value": "true" },
               { "name": "traefik.frontend.entryPoints", "value": "http,https" },
-              { "name": "traefik.frontend.redirect.entryPoint", "value": "https" },
               { "name": "traefik.frontend.redirect.regex", "value": "^(.*)/customer$$" },
               { "name": "traefik.frontend.redirect.replacement", "value": "$$1/portainer/" },
               { "name": "traefik.frontend.rule", "value": "PathPrefix:/customer;ReplacePathRegex: ^/index.php/(.*) /$$1" }
