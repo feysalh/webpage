@@ -26,7 +26,7 @@
               { "name": "com.docker.compose.oneoff", "value": "openeyes" },
               { "name": "traefik.enable", "value": "true" },
               { "name": "traefik.backend", "value": "openeyes" },
-              { "name": "traefik.frontend.rule", "value": "Host:trialopeneyes.ddns.net"},
+              { "name": "traefik.frontend.rule", "value": "Host:trialopeneyes.ddns.net; PathPrefixStrip: /customer"},
               { "name": "traefik.frontend.priority", "value": "10" },
               { "name": "traefik.port", "value": "80" },
               { "name": "traefik.docker.network", "value": "traefik_proxy" },
@@ -38,9 +38,9 @@
               { "name": "traefik.frontend.headers.STSPreload", "value": "true" },
               { "name": "traefik.frontend.headers.frameDeny", "value": "true" },
               { "name": "traefik.frontend.entryPoints", "value": "http,https" },
-              { "name": "traefik.frontend.redirect.regex", "value": "^(.*)/customer$$" },
-              { "name": "traefik.frontend.redirect.replacement", "value": "$$1/site/login" },
-              { "name": "traefik.frontend.rule", "value": "PathPrefix:/customer;ReplacePathRegex: ^/site/login(.*) /$$1" }
+              { "name": "traefik.frontend.redirect.regex", "value": "^(.*)/customer$" },
+              { "name": "traefik.frontend.redirect.replacement", "value": "$1/site/login" },
+              { "name": "traefik.frontend.rule", "value": "PathPrefix:/customer;ReplacePathRegex: ^/site/login(.*) /$1" }
             ],
             "ports": [
               "80/tcp",
