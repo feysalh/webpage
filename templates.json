@@ -43,7 +43,7 @@
             {
                 "label": "Track Commits",
                 "name": "TRACK_NEW_GIT_COMMITS",
-                "default": false,
+                "default": "FALSE",
                 "select": [
                     {
                         "text": "Yes",
