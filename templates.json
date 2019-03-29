@@ -11,12 +11,12 @@
     "name": "Please add container name here",
       "env": [
               {"label":"Proxy Path", "name":"PROXY_PATH", "description":"The unique path to this site. e.g, https://domain.com/<Path>/"},
-              {"label":"Openeyes Mode (LIVE / DEV)", "name": "OE_MODE", "default": "DEV" },
-              {"label":"Local Database", "name": "LOCAL_DB", "default": "TRUE" },
-              {"label":"Track Commits", "name": "LTRACK_NEW_GIT_COMMITS", "default": "FALSE" },
+              {"label":"Openeyes Mode", "name": "OE_MODE", "default": "DEV", "select": [{"text" : "LIVE", "value": "LIVE"}, {"text":"DEVELOPMENT", "value":"DEV", "default": "true"}], "description": "LIVE mode will hide detailed error messages from the user, not install some development components and and set a few other security hardening options" } },
+              {"label":"Local Database", "name": "LOCAL_DB", "default": "TRUE", "preset": "true" }
+              {"label":"Track Commits", "name": "TRACK_NEW_GIT_COMMITS", "default": "FALSE", "select": [{"text" : "Yes", "value": "TRUE", "default": "true"}, {"text":"No", "value":"FALSE"}], "description": "If Yes, will automatically update to the latest code from 'Github branch' at regular intervals" } },
               {"label":"Github Branch", "name": "BUILD_BRANCH", "default": "master", "description":"If you want to deploy a specific git branch (e.g, develop, feature/OE-XXXX, etc)" },
-              {"label":"Demo Data", "name": "USE_DEMO_DATA", "default": "TRUE" },
-              {"label":"Time Zone", "name": "TZ", "default": "Europe/London" }
+              {"label":"Use Demo Data", "name": "USE_DEMO_DATA", "default": "TRUE", "select": [{"text" : "Yes", "value": "TRUE", "default": "true"}, {"text":"No", "value":"FALSE"}], "description": "If Yes, will setup some demo patients in the worklist, add some docu,ent events, etc (runs all scripts in sample/demo)" }, },
+              {"label":"Time Zone", "name": "TZ", "default": "Europe/London", "description": "Override the time zone (for international users) - uses standard Unix timezone identifiers" }
             ],
            "labels": [
               { "name": "com.docker.compose.config-hash", "value": "ea719b5eeead79c07fa20ad5ae3e98debd78975ce8ffafbbdb543bc5cd2acdb5" },
