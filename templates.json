@@ -1,4 +1,3 @@
-
 [
   {
     "type": 1,
@@ -10,7 +9,7 @@
     "image": "appertaopeneyes/web-allin1:latest",
     "network": "traefik_proxy",
     "name": "Please add container name here",
-    "env": [
+           "env": [
               {"label":"Proxy Path", "name":"PROXY_PATH", "description":"The unique path to this site. e.g, https://domain.com/<Path>/"},
               {"label":"Openeyes Mode", "name": "OE_MODE", "default": "DEV", "select": [{"text" : "LIVE", "value": "LIVE"}, {"text":"DEVELOPMENT", "value":"DEV", "default": "true"}], "description": "LIVE mode will hide detailed error messages from the user, not install some development components and and set a few other security hardening options" },
               {"label":"Local Database", "name": "LOCAL_DB", "default": "TRUE", "preset": "true" },
