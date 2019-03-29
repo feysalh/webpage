@@ -113,10 +113,6 @@
                 "value": "true"
             },
             {
-                "name": "traefik.backend",
-                "value": "openeyes"
-            },
-            {
                 "name": "traefik.frontend.priority",
                 "value": "10"
             },
