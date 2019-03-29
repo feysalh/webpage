@@ -3,14 +3,14 @@
   {
     "type": 1,
     "title": "Openeyes",
-    "description": "OpenEyes™ is an Electronic Medical Record (EMR) application for ophthalmologyy, which enables clinicians to access all of the information they need about their patients in one place. We, the OpenEyes Foundation are, and always will be, clinically led, to ensure that the application only ever reflects what is most useful to our fellow clinicians. We are a registered charity, and provide the software on an open source basis, free of charge.",
+    "description": "OpenEyes™ is an Electronic Medical Record (EMR) application for ophthalmology, which enables clinicians to access all of the information they need about their patients in one place. We, the OpenEyes Foundation are, and always will be, clinically led, to ensure that the application only ever reflects what is most useful to our fellow clinicians. We are a registered charity, and provide the software on an open source basis, free of charge.",
     "categories": ["docker"],
     "platform": "linux",
     "logo": "https://s3-eu-west-1.amazonaws.com/elasticbeanstalk-eu-west-1-327595770551/OpenEyes_logo.png",
     "image": "appertaopeneyes/web-allin1:latest",
     "network": "traefik_proxy",
     "name": "Please add container name here",
-          "env": [
+    "env": [
               {"label":"Proxy Path", "name":"PROXY_PATH", "description":"The unique path to this site. e.g, https://domain.com/<Path>/"},
               {"label":"Openeyes Mode", "name": "OE_MODE", "default": "DEV", "select": [{"text" : "LIVE", "value": "LIVE"}, {"text":"DEVELOPMENT", "value":"DEV", "default": "true"}], "description": "LIVE mode will hide detailed error messages from the user, not install some development components and and set a few other security hardening options" },
               {"label":"Local Database", "name": "LOCAL_DB", "default": "TRUE", "preset": "true" },
