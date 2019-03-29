@@ -13,11 +13,6 @@
         "name": "Please add container name here",
         "env": [
             {
-                "label": "Proxy Path",
-                "name": "PROXY_PATH",
-                "description": "The unique path to this site. e.g, https://domain.com/<Path>/"
-            },
-            {
                 "label": "Openeyes Mode",
                 "name": "OE_MODE",
                 "default": "DEV",
@@ -78,7 +73,7 @@
                         "value": "FALSE"
                     }
                 ],
-                "description": "If Yes, will setup some demo patients in the worklist, add some docu,ent events, etc (runs all scripts in sample/demo)"
+                "description": "If Yes, will setup some demo patients in the worklist, add some document events, etc (runs all scripts in sample/demo)"
             },
             {
                 "label": "Time Zone",
