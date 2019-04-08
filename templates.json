@@ -133,7 +133,7 @@
             },
             {
                 "name": "traefik.frontend.headers.SSLHost",
-                "value": "trialopeneyes.co.uk"
+                "value": "abehrdigital.com"
             },
             {
                 "name": "traefik.passHostHeader",
@@ -163,7 +163,7 @@
         "volumes": [
             {
                 "container": "/run/secrets/SSH_PRIVATE_KEY",
-                "bind": "/home/ec2-user/.ssh/id_rsa"
+                "bind": "/home/ubuntu/.ssh/id_rsa"
             },
             {
                 "container": "/var/lib/mysql"
